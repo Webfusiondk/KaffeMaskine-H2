@@ -21,6 +21,7 @@ namespace KaffeMaskine
             return null;
         }
 
+        //Brew Tea
         public override string BrewCoffee(Bevearges bevearges, bool hasFilter)
         {
             return AddWater() + "\n" + AddCoffee(bevearges, hasFilter) + "\n" + TakeProduct() + "\n" + "The " + bevearges.Name + " is done.";
